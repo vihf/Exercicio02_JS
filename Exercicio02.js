@@ -10,9 +10,6 @@ let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
        tr.innerHTML = `
 <td>${usuario.nome}</td>
 <td>${usuario.email}</td>
-<td>
-<button onclick="excluirUsuario(${index})">Excluir</button>
-</td>
        `;
        tbody.appendChild(tr);
      });
